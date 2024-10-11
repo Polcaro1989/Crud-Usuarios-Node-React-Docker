@@ -11,6 +11,11 @@
   <br><br>
 </div>
 
+<div style="display: flex; align-items: center;">
+<img src="https://github.com/Polcaro1989/Crud-Usuarios-Node-React-Nodemon-Mysql-Docker-Jest/blob/main/Screenshot%20from%202024-10-11%2012-21-24%20(1).png" alt="Logo">
+  <br><br>
+</div>
+
 ## Tecnologias Usadas:
 
 #### Node - React - Jest - Express - Nodemon
