@@ -16,26 +16,26 @@
   <br><br>
 </div>
 
-## Tecnologias Usadas:
+Tecnologias Usadas:
+Node - React - Jest - Express - Nodemon
 
-#### Node - React - Jest - Express - Nodemon
+Instalação do Projeto:
 
-## Intalação do projeto:  
+O primeiro passo é ter o Node e o Yarn instalados no seu sistema.
 
-O primeiro passo e ter o Node e o Yarn instalados no seu sistema.
-
-Em particular utilizo o Node NVM, para intercalar entre as versões mais facilmente.
+Em particular, utilizo o Node NVM para intercalar entre as versões mais facilmente.
 
 Para instalar o Node.js usando o NVM (Node Version Manager) e o Yarn no Linux, siga os passos abaixo:
 
-## Instalar o NVM
-
+Instalar o NVM
 Abra o terminal e execute o seguinte comando para baixar e instalar o NVM:
 
 ```
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
 ```
-Depois, adicione o NVM ao seu terminal. Para isso, adicione as linhas abaixo ao seu arquivo ~/.bashrc, ~/.bash_profile, ou ~/.zshrc, dependendo do shell que você está usando:
+Depois, adicione o NVM ao seu terminal. 
+
+Para isso, adicione as linhas abaixo ao seu arquivo ~/.bashrc, ~/.bash_profile, ou ~/.zshrc, dependendo do shell que você está usando:
 ```
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
@@ -47,7 +47,9 @@ source ~/.bashrc  # ou ~/.bash_profile ou ~/.zshrc
 ```
 ## Instalar o Node.js
 
-Agora que o NVM está instalado, você pode instalar a versão do Node.js que desejar. Por exemplo, para instalar a versão mais recente:
+Agora que o NVM está instalado, você pode instalar a versão do Node.js que desejar. 
+
+Por exemplo, para instalar a versão mais recente:
 
 ```
 nvm install node
@@ -83,8 +85,8 @@ yarn --version
 ```
 Esses comandos devem retornar as versões instaladas de cada ferramenta.
 
-Dicas Finais
-Para listar as versões do Node.js instaladas, use nvm ls.
+Dicas finais
+para listar as versões do Node.js instaladas, use nvm ls.
 Para alternar entre versões do Node.js, use nvm use X.X.X.
 Agora você deve estar pronto para usar o Node.js e o Yarn no seu sistema Linux! Se tiver mais dúvidas, é só perguntar.
 Comece acessando a pasta api e instale as dependencias do docker, 
@@ -153,4 +155,6 @@ Proximo passo! Acessar a pasta frontend e rodar o comando :
 yarn start
 ```
 
-Automaticamente ele ira rodar e abrir o sistema na porta http://localhost:3000/ . Inicialmente aparecerá uma tela igual a imagem acima .
+Automaticamente ele ira rodar e abrir o sistema na porta http://localhost:3000/ . 
+
+Inicialmente aparecerá uma tela igual a imagem acima .
