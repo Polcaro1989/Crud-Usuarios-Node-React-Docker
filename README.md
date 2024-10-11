@@ -1,8 +1,11 @@
-# Sistema Crud-Usuarios-Node-React-Nodemon-Mysql-Docker-Jest para uso em containers Docker.  
-  
-<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=00bfbf&height=120&section=header"/>
-  
-[![Typing SVG](https://readme-typing-svg.herokuapp.com/?color=00000&size=35&center=true&vCenter=true&width=1000&lines=Abraão+Polcaro,+Analista+de+Sistemas.)](https://git.io/typing-svg)
+# Sistema Crud-Usuarios containers Docker.  
+
+## Tecnologias Usadas:
+
+React
+Jest
+Express
+Nodemon
 
 <div style="display: flex; align-items: center;">
 <img src="https://github.com/abraao69/abraao69/blob/main/Navy%20Blue%20Geometric%20Technology%20LinkedIn%20Banner%20(2).png" alt="Logo">
