@@ -115,7 +115,7 @@ CREATE TABLE `usuarios` (
 
 ```
 
-Ainda dentro da pasta api rodar o comando :
+Ainda dentro da pasta api rodar o comando para iniciar o Nodemon:
 
 ```
 yarn start
