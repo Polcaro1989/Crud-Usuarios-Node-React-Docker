@@ -17,7 +17,7 @@
 </div>
 
 Tecnologias Usadas:
-Node - React - Jest - Express - Nodemon
+Node - React - Jest - Express - Nodemon - Api
 
 Instalação do Projeto:
 
