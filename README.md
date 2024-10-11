@@ -4,7 +4,10 @@
   
 [![Typing SVG](https://readme-typing-svg.herokuapp.com/?color=00000&size=35&center=true&vCenter=true&width=1000&lines=Abraão+Polcaro,+Analista+de+Sistemas.)](https://git.io/typing-svg)
 
-
+<div style="display: flex; align-items: center;">
+<img src="https://github.com/abraao69/abraao69/blob/main/Navy%20Blue%20Geometric%20Technology%20LinkedIn%20Banner%20(2).png" alt="Logo">
+  <br><br>
+</div>
   
 
 ## CRÉDITOS AO AUTOR DO SISTEMA CMS VOGUE:  
