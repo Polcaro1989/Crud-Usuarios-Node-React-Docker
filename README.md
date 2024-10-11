@@ -14,7 +14,7 @@
 
 O primeiro passo e ter o Node e o Yarn instalados no seu sistema.
 
-Em particular utilizo o Node NV, para intercalar entre as versões mais facilmente.
+Em particular utilizo o Node NVM, para intercalar entre as versões mais facilmente.
 
 Para instalar o Node.js usando o NVM (Node Version Manager) e o Yarn no Linux, siga os passos abaixo:
 
