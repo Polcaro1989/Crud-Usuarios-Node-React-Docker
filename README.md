@@ -9,10 +9,7 @@
 
 ## Tecnologias Usadas:
 
-#### React
-#### Jest
-#### Express
-#### Nodemon
+#### Node - React - Jest - Express - Nodemon
 
 ## Intalação do projeto:  
 
