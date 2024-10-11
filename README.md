@@ -158,6 +158,9 @@ Proximo passo! Acessar a pasta frontend e rodar o comando :
 yarn start
 ```
 
-Automaticamente ele ira rodar e abrir o sistema na porta http://localhost:3000/ . 
+Automaticamente ele ira rodar e abrir o sistema na porta:
 
+```
+http://localhost:3000/ . 
+```
 Inicialmente aparecerá uma tela igual a imagem acima .
