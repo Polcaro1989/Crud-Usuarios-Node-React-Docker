@@ -10,101 +10,103 @@
 </div>
   
 
-## CRÉDITOS AO AUTOR DO SISTEMA CMS VOGUE:  
-https://www.sourcecodester.com/php/15517/company-website-cms-php.html  
-  
-### O sistema é antigo e já foi descontinuado. Aconselho usar apenas para fins pessoais.
-  
-  
-## O servidor está configurado com muitos complementos sendo grande parte deles desnecessários.  
-Retire-os conforme quiser personalizar sua instalação no arquivo dockerfile.  
-Além disso, esse projeto é bom para personalizar para outros projetos Web também.  
-  
+## Intalação do projeto:  
 
-## Comandos:
-Iniciar:  
-docker-compose up -d  
-  
-Parar:  
-docker-compose down  
+O primeiro passo e ter o Node e o Yarn instalados no seu sistema.
 
-Fazer o build dos containers analizando a construção:  
-docker-compose up --build  
-  
+Em particular utilizo o Node NV, para intercalar entre as versões mais facilmente.
 
-## Use a mesma configuração no OpenCart que você usou no .env para o banco de dados  
-A princípio é essa configuração: 
-Endereço: localhost   
-SGBD: MySQL  
-Banco: opencartbrasil  
-User: root  
-Senha: root  
-  
-  
+Para instalar o Node.js usando o NVM (Node Version Manager) e o Yarn no Linux, siga os passos abaixo:
 
-### Instalação de algumas dependências
-sudo apt-get install \
-    apt-transport-https \
-    ca-certificates \
-    curl \
-    gnupg \
-    lsb-release
-  
+## Instalar o NVM
 
-### 
-### Instalação do Docker
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+Abra o terminal e execute o seguinte comando para baixar e instalar o NVM:
 
-echo \
-  "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
-$(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+```
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
+```
+Depois, adicione o NVM ao seu terminal. Para isso, adicione as linhas abaixo ao seu arquivo ~/.bashrc, ~/.bash_profile, ou ~/.zshrc, dependendo do shell que você está usando:
+```
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
+```
+Em seguida, recarregue o arquivo de configuração:
+```
+source ~/.bashrc  # ou ~/.bash_profile ou ~/.zshrc
+```
+## Instalar o Node.js
 
+Agora que o NVM está instalado, você pode instalar a versão do Node.js que desejar. Por exemplo, para instalar a versão mais recente:
 
-sudo apt-get update
+```
+nvm install node
+```
+Para instalar uma versão específica (substitua X.X.X pela versão desejada):
+```
+nvm install X.X.X
+```
+## Instalar o Yarn
 
-sudo apt-get install docker-ce docker-ce-cli containerd.io
+Com o Node.js instalado, você pode instalar o Yarn globalmente usando o npm (que é instalado junto com o Node.js):
 
-Depois de instalado e configurado rode o Docker:
-sudo service docker start
+```
+npm install --global yarn
+```
+## Verificar as Instalações
 
-Testar se o serviço Docker está rodando corretamente:
-sudo docker run hello-world  
+Para verificar se o NVM, Node.js e Yarn foram instalados corretamente, execute:
 
+```
+nvm --version
 
-##
-### Docker-Compose - Instalação e configuração:
-OBS: EM ALGUNS CASOS PODE ESTAR NO /usr/bin/docker-compose
+```
 
-sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+```
+node --version
 
-sudo chmod +x /usr/local/bin/docker-compose
+```
 
-docker-compose --version  
-  
-##
-### Para usar o Docker sem usar sudo
-https://docs.docker.com/engine/install/linux-postinstall/
-  
-##  
-### Configurar para o fuso horário de São Paulo
-sudo timedatectl set-timezone America/Sao_Paulo
-  
-##
-### Adicionar o repositório do PHP:
-sudo add-apt-repository ppa:ondrej/php
+```
+yarn --version
 
-##
-### Instalar os pacotes do PHP instalado. Verificar com php version.
-sudo apt-get install -y php8.2-cli php8.2-common php8.2-pgsql php8.2-zip php8.2-gd php8.2-mbstring php8.2-curl php8.2-xml php8.2-bcmath
+```
+Esses comandos devem retornar as versões instaladas de cada ferramenta.
 
-##
-### Install Composer
-curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin --filename=composer
+Dicas Finais
+Para listar as versões do Node.js instaladas, use nvm ls.
+Para alternar entre versões do Node.js, use nvm use X.X.X.
+Agora você deve estar pronto para usar o Node.js e o Yarn no seu sistema Linux! Se tiver mais dúvidas, é só perguntar.
+Comece acessando a pasta api e instale as dependencias do docker, caso não tenha o docker instalado no seu sistema acesse:
 
+```
+https://github.com/Polcaro1989/Instala-o-Docker-compose/blob/main/README.md
+```
+Comando para a instalação:
 
-php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
-php -r "if (hash_file('sha384', 'composer-setup.php') === 'e21205b207c3ff031906575712edab6f13eb0b361f2085f1f1237b7126d785e826a450292b6cfd1d64d92e6563bbde02') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
-php composer-setup.php
-php -r "unlink('composer-setup.php');"
+```
+docker-compose up -d
+```
+Acessar o phpmyadmin :
+```
+http://localhost:8080/
+```
+Próximo passo e criar a tabela :
 
-sudo apt-get install composer
+```
+CREATE TABLE `usuarios` (
+  `id` int(11) NOT NULL,
+  `nome` varchar(100) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `fone` varchar(15) DEFAULT NULL,
+  `data_nascimento` date DEFAULT NULL,
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+```
+
+Ainda dentro da pasta api rodar o comando :
+
+```
+yarn start
+```
