@@ -87,12 +87,16 @@ Dicas Finais
 Para listar as versões do Node.js instaladas, use nvm ls.
 Para alternar entre versões do Node.js, use nvm use X.X.X.
 Agora você deve estar pronto para usar o Node.js e o Yarn no seu sistema Linux! Se tiver mais dúvidas, é só perguntar.
-Comece acessando a pasta api e instale as dependencias do docker, caso não tenha o docker instalado no seu sistema acesse:
+Comece acessando a pasta api e instale as dependencias do docker, 
+
+
+## Obs caso não tenha o docker instalado no seu sistema acesse:
 
 ```
 https://github.com/Polcaro1989/Instala-o-Docker-compose/blob/main/README.md
 ```
-Comando para a instalação:
+
+Comando para rodar o Docker:
 
 ```
 docker-compose up -d
