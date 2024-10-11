@@ -45,7 +45,8 @@ Em seguida, recarregue o arquivo de configuração:
 ```
 source ~/.bashrc  # ou ~/.bash_profile ou ~/.zshrc
 ```
-## Instalar o Node.js
+
+Instalar o Node.js
 
 Agora que o NVM está instalado, você pode instalar a versão do Node.js que desejar. 
 
@@ -58,14 +59,16 @@ Para instalar uma versão específica (substitua X.X.X pela versão desejada):
 ```
 nvm install X.X.X
 ```
-## Instalar o Yarn
+
+Instalar o Yarn
 
 Com o Node.js instalado, você pode instalar o Yarn globalmente usando o npm (que é instalado junto com o Node.js):
 
 ```
 npm install --global yarn
 ```
-## Verificar as Instalações
+
+Verificar as Instalações
 
 Para verificar se o NVM, Node.js e Yarn foram instalados corretamente, execute:
 
@@ -92,7 +95,7 @@ Agora você deve estar pronto para usar o Node.js e o Yarn no seu sistema Linux!
 Comece acessando a pasta api e instale as dependencias do docker, 
 
 
-## Obs caso não tenha o docker instalado no seu sistema acesse:
+Obs caso não tenha o docker instalado no seu sistema acesse:
 
 ```
 https://github.com/Polcaro1989/Instala-o-Docker-compose/blob/main/README.md
