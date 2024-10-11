@@ -114,9 +114,39 @@ CREATE TABLE `usuarios` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 ```
+Adicione o insert :
+
+```
+INSERT INTO `usuarios` (`id`, `nome`, `email`, `fone`, `data_nascimento`, `created_at`) VALUES
+(2, 'Abraão Polcaro', 'bruno.souza@example.com', '(21) 98765-4321', '2024-10-11', '2024-10-11 15:02:21'),
+(3, 'Carlos Oliveira', 'carlos.oliveira@example.com', '(31) 99876-5432', '1992-03-12', '2024-10-11 15:02:21'),
+(4, 'Diana Costa', 'diana.costa@example.com', '(41) 93456-7890', '1988-11-25', '2024-10-11 15:02:21'),
+(5, 'Eduardo Lima', 'eduardo.lima@example.com', '(51) 91234-0987', '1995-01-30', '2024-10-11 15:02:21'),
+(6, 'Fernanda Almeida', 'fernanda.almeida@example.com', '(61) 92345-6789', '1993-09-05', '2024-10-11 15:02:21'),
+(7, 'Gabriel Santos', 'gabriel.santos@example.com', '(71) 98765-1234', '1980-12-10', '2024-10-11 15:02:21'),
+(8, 'Helena Martins', 'helena.martins@example.com', '(81) 94567-8901', '1994-07-18', '2024-10-11 15:02:21'),
+(9, 'Igor Pereira', 'igor.pereira@example.com', '(91) 93456-7890', '1991-02-22', '2024-10-11 15:02:21'),
+(10, 'Juliana Ferreira', 'juliana.ferreira@example.com', '(11) 97654-3210', '1987-06-14', '2024-10-11 15:02:21'),
+(11, 'Lucas Rocha', 'lucas.rocha@example.com', '(21) 91234-5678', '1996-10-03', '2024-10-11 15:02:21'),
+(12, 'Mariana Mendes', 'mariana.mendes@example.com', '(31) 99876-5432', '1992-04-16', '2024-10-11 15:02:21'),
+(13, 'Nicolas Dias', 'nicolas.dias@example.com', '(41) 91234-5678', '1989-03-28', '2024-10-11 15:02:21'),
+(14, 'Olivia Ribeiro', 'olivia.ribeiro@example.com', '(51) 92345-6789', '1993-08-08', '2024-10-11 15:02:21'),
+(15, 'Paulo Martins', 'paulo.martins@example.com', '(61) 98765-4321', '1986-01-01', '2024-10-11 15:02:21'),
+(16, 'Quésia Lima', 'quesia.lima@example.com', '(71) 98765-1234', '1990-11-11', '2024-10-11 15:02:21'),
+(17, 'Renato Santos', 'renato.santos@example.com', '(81) 93456-7890', '1994-09-27', '2024-10-11 15:02:21'),
+(18, 'Sofia Alves', 'sofia.alves@example.com', '(91) 97654-3210', '1995-07-22', '2024-10-11 15:02:21'),
+(19, 'Tiago Nascimento', 'tiago.nascimento@example.com', '(11) 94567-8901', '1991-12-30', '2024-10-11 15:02:21'),
+(20, 'Ursula Gomes', 'ursula.gomes@example.com', '(21) 91234-5678', '1988-05-17', '2024-10-11 15:02:21');
+```
 
 Ainda dentro da pasta api rodar o comando para iniciar o Nodemon:
 
 ```
 yarn start
 ```
+Proximo passo! Acessar a pasta frontend e rodar o comando :
+```
+yarn start
+```
+
+Automaticamente ele ira rodar e abrir o sistema na porta http://localhost:3000/ . Inicialmente aparecerá uma tela igual a imagem acima .
